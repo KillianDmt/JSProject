@@ -1,0 +1,55 @@
+* {
+    margin : 0;
+    padding : 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow : hidden;
+    user-select: none;
+}
+
+.container {
+    height: 100vh;
+    display : flex;
+    justify-content : center;
+    align-items: center;
+    flex-direction: column;
+    gap : 50px;
+    background-color: lightblue;
+    padding : 20px 0;
+}
+
+.score {
+    top: 0;
+    font-size: 4rem;
+    font-weight: bold;
+    text-shadow: 0 0 10px black;
+    width : 100%;
+    text-align: center;
+    color: white;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.cookie-container {
+    height : 320px;
+}
+
+.cookie {
+    width : 300px;
+    cursor : pointer;
+    filter : drop-shadow(0 0 2px white);
+    animation: rotate 100s linear infinite;
+}
+
+.cookie:active {
+    width: 280px;
+}
+
+/* Keyframes */
+
+@keyframes rotates {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
