@@ -42,6 +42,7 @@ function imageErreur() {
     let imageErreur = pendu[erreur]
     document.getElementById("Pendu").src = "Images/" + imageErreur;
 }
+
 let restart = document.getElementById("restart")
 if (restart){
     restart.addEventListener('click', function() {
@@ -52,4 +53,6 @@ if (restart){
         TableauLettre = ChoixMot.split("")
         console.log(TableauLettre)
     })
+
+    
 }
